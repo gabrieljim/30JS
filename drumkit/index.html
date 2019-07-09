@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="./script.js"></script>
+		<link rel="stylesheet" href="./style.css">
+		<audio id=106>
+			<source src="./sounds/606-cymbal8.wav"> 
+		</audio>
+		<audio id=102>
+			<source src="./sounds/606-snare2.wav"> 
+		</audio>
+		<audio id=98>
+			<source src="./sounds/606-kick1.wav"> 
+		</audio>
+	</head>
+	<body onkeypress="handleKey(event)">
+		<div class="platillos">	
+			<div class="drumPart" id="k102" onclick="audioThings(102)" >
+				<h1>F</h1>
+				<h4>snare</h4>
+			</div>
+			<div class="drumPart" id="k106" onclick="audioThings(106)" >
+				<h1>J</h1>
+				<h4>hi-hat</h4>
+			</div>
+		</div>
+		<div class="drumPart" id="k98" onclick="audioThings(98)">
+			<h1>B</h1>
+			<h4>Kick</h4>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+.platillos {
+	display:flex;
+}
+
+.drumPart {
+	width:20%;
+	margin:auto;
+	font-size:30px;
+	text-align:center;
+}
+
+.playing {
+	background-color:red;
+}
