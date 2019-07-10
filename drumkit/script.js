@@ -22,11 +22,13 @@ keys = {
 }
 
 function audioThings(key) {
-	var div = document.getElementById(key);
+	var divPressed = document.getElementById(key);
+	divPressed.classList.remove("playing")
+	divPressed.classList.add("playing");
 
-
-	div.classList.add("playing");
-	setTimeout(() => div.classList.remove("playing"), 50);
+	divPressed.addEventListener('transitionend',() => {
+		divPressed.classList.remove("playing")
+	});
 
 	if (keys[key].paused) {
 		keys[key].play();
@@ -38,5 +40,8 @@ function audioThings(key) {
 
 function handleKey(event) {
 	var key = event.charCode;
+	if (!keys.hasOwnProperty(key)){
+		return;
+	}
 	audioThings(key);
 }

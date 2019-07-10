@@ -17,13 +17,19 @@ body {
 
 .drumPart {
 	width:13%;
+	height:200px;
 	font-size:30px;
 	text-align:center;
 	color:white;
 	background-color:#333;
 	opacity:0.8;
 	border-radius:13px;
-	box-shadow: 0 0 5px 3px white;
+	box-shadow: 0 0 5px white;
+	transition: transform 0.02s;
+}
+
+h4 {
+	color:#ffc600;
 }
 
 .tomUp{
@@ -45,6 +51,8 @@ body {
 
 .mid {
 	width:40%;
+	height:200px;
+	margin: 10px 0 10px 0;
 }
 
 .drums {
@@ -66,5 +74,7 @@ body {
 .playing {
 	transform:scale(1.1);
 	border-radius:13px;
-	box-shadow: 0 0 30px 3px yellow;
+	border-color: #ffc600;
+	box-shadow: 0 0 30px #ffc600;
+	opacity:1;
 }
