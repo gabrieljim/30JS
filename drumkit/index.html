@@ -3,104 +3,94 @@
 	<head>
 		<script src="./script.js"></script>
 		<link rel="stylesheet" href="./style.css">
-		<audio id=107>
-			<source src="./sounds/606-cymbal8.wav"> 
-		</audio>
-		<audio id=102>
-			<source src="./sounds/606-snare2.wav"> 
-		</audio>
-		<audio id=103>
-			<source src="./sounds/606-snare2.wav"> 
-		</audio>
-		<audio id=98>
-			<source src="./sounds/606-kick1.wav"> 
-		</audio>
-		<audio id=110>
-			<source src="./sounds/606-kick1.wav"> 
-		</audio>
-		<audio id=101>
-			<source src="./sounds/606-cymbal2.wav"> 
-		</audio>
-		<audio id=114>
-			<source src="./sounds/606-tom1.wav"> 
-		</audio>
-		<audio id=116>
-			<source src="./sounds/606-tom1.wav"> 
-		</audio>
-		<audio id=115>
-			<source src="./sounds/606-tom2.wav"> 
-		</audio>
-		<audio id=100>
-			<source src="./sounds/606-tom2.wav"> 
-		</audio>
-		<audio id=104>
-			<source src="./sounds/606-tom4.wav"> 
-		</audio>
-		<audio id=106>
-			<source src="./sounds/606-tom4.wav"> 
-		</audio>
 	</head>
 	<body onkeypress="handleKey(event)">
-		<div class="platillos">	
-			<div class="drumPart" id="k101" onclick="audioThings(101)" >
-				<h1>E</h1>
-				<h4>crash</h4>
-			</div>
-			<div class="tommy1">
-				<div class="drumPart tomUp" id="k114" onclick="audioThings(114)" >
-					<h1>R</h1>
-					<h4>tommy1</h4>
+		<div class="drums">
+			<div class="platillos">	
+				<div class="drumPart" id="101" onclick="audioThings(101)" >
+					<kbd>
+						<h1>E</h1>
+						<h4>crash</h4>
+					</kbd>
 				</div>
-				<div class="drumPart tomUp" id="k116" onclick="audioThings(116)" >
-					<h1>T</h1>
-					<h4>tommy1</h4>
+				<div class="tommy1">
+					<div class="drumPart tomUp" id="114" onclick="audioThings(114)" >
+						<kbd>
+							<h1>R</h1>
+							<h4>tommy1</h4>
+						</kbd>
+					</div>
+					<div class="drumPart tomUp" id="116" onclick="audioThings(116)" >
+						<kbd>
+							<h1>T</h1>
+							<h4>tommy1</h4>
+						</kbd>
+					</div>
 				</div>
-				</div>
-			<div class="drumPart" id="k107" onclick="audioThings(107)">
-				<h1>K</h1>
-				<h4>hi-hat</h4>
-			</div>
-		</div>
-		<div class="tambores">
-			<div class="tommy2 middle">
-				<div class="drumPart mid" id="k115" onclick="audioThings(115)" >
-					<h1>S</h1>
-					<h4>tommy2</h4>
-				</div>
-				<div class="drumPart mid" id="k100" onclick="audioThings(100)" >
-					<h1>D</h1>
-					<h4>tommy2</h4>
+				<div class="drumPart" id="107" onclick="audioThings(107)">
+					<kbd>
+						<h1>K</h1>
+						<h4>hi-hat</h4>
+					</kbd>
 				</div>
 			</div>
-			<div class="snare middle">
-				<div class="drumPart mid" id="k102" onclick="audioThings(102)" >
-					<h1>F</h1>
-					<h4>snare</h4>
+			<div class="tambores">
+				<div class="tommy2 middle">
+					<div class="drumPart mid" id="115" onclick="audioThings(115)" >
+						<kbd>
+							<h1>S</h1>
+							<h4>tommy2</h4>
+						</kbd>
+					</div>
+					<div class="drumPart mid" id="100" onclick="audioThings(100)" >
+						<kbd>
+							<h1>D</h1>
+							<h4>tommy2</h4>
+						</kbd>
+					</div>
 				</div>
-				<div class="drumPart mid" id="k103" onclick="audioThings(103)" >
-					<h1>G</h1>
-					<h4>snare</h4>
+				<div class="snare middle">
+					<div class="drumPart mid" id="102" onclick="audioThings(102)" >
+						<kbd>
+							<h1>F</h1>
+							<h4>snare</h4>
+						</kbd>
+					</div>
+					<div class="drumPart mid" id="103" onclick="audioThings(103)" >
+						<kbd>
+							<h1>G</h1>
+							<h4>snare</h4>
+						</kbd>
+					</div>
+				</div>
+				<div class="tommy3 middle">
+					<div class="drumPart mid" id="104" onclick="audioThings(104)" >
+						<kbd>
+							<h1>H</h1>
+							<h4>tommy3</h4>
+						</kbd>
+					</div>
+					<div class="drumPart mid" id="106" onclick="audioThings(106)" >
+						<kbd>
+							<h1>J</h1>
+							<h4>tommy3</h4>
+						</kbd>
+					</div>
 				</div>
 			</div>
-			<div class="tommy3 middle">
-				<div class="drumPart mid" id="k104" onclick="audioThings(104)" >
-					<h1>H</h1>
-					<h4>tommy3</h4>
+			<div class="kick">
+				<div class="drumPart" id="98" onclick="audioThings(98)">
+					<kbd>
+						<h1>B</h1>
+						<h4>kick</h4>
+					</kbd>
 				</div>
-				<div class="drumPart mid" id="k106" onclick="audioThings(106)" >
-					<h1>J</h1>
-					<h4>tommy3</h4>
+				<div class="drumPart" id="110" onclick="audioThings(110)">
+					<kbd>
+						<h1>N</h1>
+						<h4>kick</h4>
+					</kbd>
 				</div>
-			</div>
-		</div>
-		<div class="kick">
-			<div class="drumPart" id="k98" onclick="audioThings(98)">
-				<h1>B</h1>
-				<h4>kick</h4>
-			</div>
-			<div class="drumPart" id="k110" onclick="audioThings(110)">
-				<h1>N</h1>
-				<h4>kick</h4>
 			</div>
 		</div>
 	</body>

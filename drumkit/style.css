@@ -1,3 +1,6 @@
+body {
+	background-image:url("./concert.jpg")
+}
 .platillos, .tommy1{
 	display:flex;
 	justify-content:space-between;
@@ -10,21 +13,25 @@
 .tambores {
 	display:flex;
 	flex-direction:row;
-	justify-content:space-around;
 }
 
 .drumPart {
-	width:20%;
+	width:13%;
 	font-size:30px;
 	text-align:center;
+	color:white;
+	background-color:#333;
+	opacity:0.8;
+	border-radius:13px;
+	box-shadow: 0 0 5px 3px white;
 }
 
 .tomUp{
-	width:50%;
+	width:40%;
 }
 
 .tommy1{
-	width:40%;
+	width:35%;
 }
 
 .middle {
@@ -32,12 +39,32 @@
 	display:flex;
 	width:33%;
 	justify-content:space-around;
+	margin-top:10px;
+	margin-bottom:3px
 }
 
 .mid {
-	width:50%;
+	width:40%;
+}
+
+.drums {
+	width:99.3%;
+	margin:auto;
+	align-items:center;
+}
+
+.kick{
+	align-items:center;
+}
+
+[id="98"],[id="110"] {
+	height:200px;
+	width:13%;
+	margin:4px 20px 0 20px;
 }
 
 .playing {
-	background-color:red;
+	transform:scale(1.1);
+	border-radius:13px;
+	box-shadow: 0 0 30px 3px yellow;
 }
