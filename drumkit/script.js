@@ -22,8 +22,12 @@ keys = {
 }
 
 function audioThings(key) {
+	var allDivs = document.getElementsByClassName("drumPart");
+	for (let i = 0; i < allDivs.length; i++){
+		allDivs[i].classList.remove("playing");
+	}
+
 	var divPressed = document.getElementById(key);
-	divPressed.classList.remove("playing")
 	divPressed.classList.add("playing");
 
 	divPressed.addEventListener('transitionend',() => {
