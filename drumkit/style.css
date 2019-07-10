@@ -1,12 +1,41 @@
-.platillos {
+.platillos, .tommy1{
 	display:flex;
+	justify-content:space-between;
+}
+
+.kick {
+	display:flex;
+	justify-content:center;
+}
+.tambores {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
 }
 
 .drumPart {
 	width:20%;
-	margin:auto;
 	font-size:30px;
 	text-align:center;
+}
+
+.tomUp{
+	width:50%;
+}
+
+.tommy1{
+	width:40%;
+}
+
+.middle {
+	flex-direction:row;
+	display:flex;
+	width:33%;
+	justify-content:space-around;
+}
+
+.mid {
+	width:50%;
 }
 
 .playing {
