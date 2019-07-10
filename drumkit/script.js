@@ -1,6 +1,6 @@
-const kick = new Audio("./sounds/606-kick1.wav");
+const kick = new Audio("./sounds/BlazeKick.wav");
 const hihat = new Audio("./sounds/606-cymbal8.wav");
-const snare = new Audio("./sounds/606-snare2.wav");
+const snare = new Audio("./sounds/Alt-Snare.wav");
 const crash = new Audio("./sounds/606-cymbal2.wav")
 const tom1 = new Audio("./sounds/606-tom1.wav")
 const tom2 = new Audio("./sounds/606-tom2.wav")
